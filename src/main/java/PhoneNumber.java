@@ -40,17 +40,11 @@ public class PhoneNumber {
     private String invalidReason = null;
 
     PhoneNumber(String originalValue) {
-        this.originalValue = originalValue;
-        //"+1(858)775-2868"
     }
 
     /**************************************************************************/
     /* Reduce the string to just numbers */
-    private static String stripPhoneNumber(String number) {
-        number.replaceAll("-", "");
-        //"+18587752868"
-        return null;
-    }
+    private static String stripPhoneNumber(String number) { return null; }
 
     /**************************************************************************/
     private static int getCountryCodeIndex(String strippedNumber) {
